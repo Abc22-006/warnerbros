@@ -1,0 +1,339 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> GAMES AND APPS</title>
+		<style>
+			*{
+			padding:0;
+			margin:0;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+			}
+			body{
+			font-family: montserrat
+			}
+			nav{
+			background: #0082e6;
+			height: 120px;
+			width: 100%;
+			}
+			label.logo{
+			color: white;
+			font-size: 35px;
+			line-height:80px;
+			padding: 0 100px;
+			font-weight: bold;
+			}
+			nav ul{
+			float: right;
+			margin-right: 20px;
+			}
+			nav ul li{
+			display: inline;
+			line-height: 80px;
+			margin: 0 5px;
+			}
+			nav ul li a{
+			color: white;
+			font-size; 17px;
+			}
+			.search-container {
+			 
+			  display: flex;
+			  justify-content: flex-end;
+			  margin-bottom: 20px;
+			}
+
+			.search-container input[type="text"] {
+			  padding: 10px;
+			  border: none;
+			  border-radius: 5px 0 0 5px;
+			  outline: none;
+			  width: 200px;
+			}
+
+			.search-container button {
+			  padding: 10px;
+			  border: none;
+			  border-radius: 0 5px 5px 0;
+			  background: #555;
+			  color: #fff;
+			  cursor: pointer;
+			}
+
+			.search-container button:hover {
+			  background: #666;
+			  padding-top: 20 px;	
+			}
+			.slideshow-container {
+				position: relative;
+				margin: auto;
+				width: 50%;
+				height: 500px;
+				padding-top: 20 px;
+			}
+				.mySlides {
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+				}
+
+				.prev, .next {
+					position: absolute;
+					top: 50%;
+					margin-top: -22px;
+					font-size: 25px;
+					font-weight: bold;
+					padding: 16px;
+					color: white;
+					background-color: rgba(0, 0, 0, 0.8);
+					border-radius: 0 3px 3px 0;
+					cursor: pointer;
+				}
+
+				.next {
+					right: 0;
+					border-radius: 3px 0 0 3px;
+				}
+
+				.prev:hover, .next:hover {
+					background-color: rgba(0, 0, 0, 0.6);
+				}
+
+				@media only screen and (max-width: 700px) {
+					.slideshow-container {
+						width: 100%;
+					}
+					.prev, .next {
+						font-size: 15px;
+						padding: 10px;
+					}
+				}
+			h1{
+			
+			}
+			section{
+				float:left;
+				width: 20%;
+				}
+				footer {
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+  clear: both;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left img {
+  height: 40px;
+}
+
+.footer-left p {
+  margin: 5px 0 0;
+}
+
+.footer-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-right ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-right ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+  color: #ccc;
+}
+		</style>
+	</head>
+	<body>
+		<nav>
+			
+			<label class="Logo"> WARNER BROS TV SHOWS</label>
+			<ul>
+				<li><a href="HOMEPAGE.html">HOME</a></li>
+				<li><a href="MOVIESPAGE.html">MOVIES </a></li>
+				<li><a href="TVSHOWSPAGE.html">TV SHOWS </a></li>
+				<li><a href="GAMES&APPS.html">GAMES & APPS</a></li>
+				
+				<li><a href="FEEDBACKPAGE.html">FEED BACK</a></li>
+			</ul>
+			<div class="search-container">
+		  <form action="#">
+			<input type="text" placeholder="Search..." name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		  </form>
+		</div>
+		</nav>
+		
+		<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="creed3.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="you.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="nightagent.jpg" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<script>
+		var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slides[slideIndex-1].style.display = "block";
+			}
+	</script>
+
+		<h1>REALITY TV</h1>
+			<section>
+						<a href="playingmovie.html">
+			<img src= "yfa.jpg" width="220" height="280"/>
+			</a>
+					</section>
+					<section>
+						<img src="housewives.jpg" alt="just mercy" width="220" height="280">
+						<p> THE REAL HOUSE WIVES</p>
+					</section>
+					<section>
+					
+						<img src="NF.jpg" alt="purplehearts" width="220" height="280">
+						<p>NEXT IN FASHION</p>
+					</section>
+					<section>
+						<img src="BB.jpg" alt="Fatherhood" width="220" height="280">
+						<p>BEING BONANG</p>
+					</section>
+					<section>
+						<img src="FF.jpg" alt="midnight sun" width="220" height="280">
+						<p>FAMILY FEUD .</p>
+					</section>
+					
+			<h1>DRAMA</h1>
+			<section>
+						<img src="2hearts.jpg" alt="2hearts" width="220" height="280">
+						<p>2 HEARTS </p>
+					</section>
+					<section>
+						<img src="he all that.jpg" alt="he all that" width="220" height="280">
+						<p>HE'S ALL THAT</p>
+					</section>
+					<section>
+						<img src="birdbox.jpg" alt="bird box" width="220" height="280">
+						<p>BIRD BOX</p>
+					</section>
+					<section>
+						<img src="carrie.jpg" alt="carrie" width="220" height="280">
+						<p>CARRIE</p>
+					</section>
+					<section>
+						<img src="little man.jpg" alt="little man" width="220" height="280">
+						<p>LITTLE MAN</p>
+					</section>
+			<h1>COMEDY</h1>
+			<section>
+						<img src="nightagent.jpg" alt="EMAIL" width="220" height="280">
+						<p>NIGHT AGENT </p>
+					</section>
+					<section>
+						<img src="bloodandwater.jpg" alt="EMAIL" width="220" height="280">
+						<p>BLOOD AND WATER</p>
+					</section>
+					<section>
+						<img src="lucy.jpg" alt="EMAIL" width="220" height="280">
+						<p>LUCIFER</p>
+					</section>
+					<section>
+						<img src="stranger things.jpg" alt="EMAIL" width="220" height="280">
+						<p> STRANGER THINGS</p>
+					</section>
+					<section>
+						<img src="13reasonswhy.jpg" alt="EMAIL" width="220" height="280">
+						<p>13 REASONS WHY</p>
+					</section>
+			<h1>ROMANCE</h1>
+			<section>
+						<img src="nightagent.jpg" alt="EMAIL" width="220" height="280">
+						<p>NIGHT AGENT </p>
+					</section>
+					<section>
+						<img src="bloodandwater.jpg" alt="EMAIL" width="220" height="280">
+						<p>BLOOD AND WATER</p>
+					</section>
+					<section>
+						<img src="lucy.jpg" alt="EMAIL" width="220" height="280">
+						<p>LUCIFER</p>
+					</section>
+					<section>
+						<img src="stranger things.jpg" alt="EMAIL" width="220" height="280">
+						<p> STRANGER THINGS</p>
+					</section>
+					<section>
+						<img src="13reasonswhy.jpg" alt="EMAIL" width="220" height="280">
+						<p>13 REASONS WHY</p>
+					</section>
+			</body>
+	<footer>
+	<div class="footer-container">
+    <div class="footer-left">
+      <img src="wb.jpg" alt="Movie Logo">
+      <p>&copy; 2023 Movie Website. All rights reserved.</p>
+	  <ul>
+        <li><a href="#">company</a></li>
+        <li><a href="#">press release</a></li>
+        <li><a href="#">careers</a></li>
+        <li><a href="#">international </a></li>
+        <li><a href="#">help</a></li>
+      </ul>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Ad choices</a></li>
+        <li><a href="#">ASccessibility </a></li>
+        <li><a href="#">Cookie settings</a></li>
+      </ul>
+    </div>
+  </div>
+	</footer>
+</html>
